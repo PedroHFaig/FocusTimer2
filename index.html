@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html lang="pt-br" class="">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Focus Timer</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="./src/main.js" defer></script>
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+<body>
+    
+    <div id="app">
+         <div class="theTimer">
+            <section id="timer">
+                <span id="minutes">00</span>
+                <span>:</span>
+                <span id="seconds">00</span>
+            </section>
+
+            <section id="controls">
+                <button data-action="toggleRunning" 
+                class="ph-bold ph-play-circle"></button>
+                <button data-action="toggleRunning" 
+                class="ph-bold ph-pause-circle"></button>
+                <button data-action="reset" 
+                class="ph-bold ph-stop-circle"></button>
+                <button data-action="plusTime" 
+                class="ph-bold ph-plus-circle"></button>
+                <button data-action="minusTime" 
+                class="ph-bold ph-minus-circle"></button>
+            </section>
+         </div>
+
+         <div id="ambient-music">
+            <i data-action="toggleForest" class="ph ph-tree"></i>
+            <i data-action="toggleRain" class="ph ph-cloud-rain"></i>
+            <i data-action="toggleStore" class="ph ph-storefront"></i>
+            <i data-action="toggleFire" class="ph ph-flame"></i>
+         </div>
+    </div>
+</body>
+</html>
