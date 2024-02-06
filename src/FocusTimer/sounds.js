@@ -1,6 +1,6 @@
 export const cafeteria = new Audio('./assets/Cafeteria.wav')
 
-export const chuva = new Audio('./assets/chuva.wav')
+export const chuva = new Audio('./assets/Chuva.wav')
 
 export const floresta = new Audio('./assets/Floresta.wav')
 
